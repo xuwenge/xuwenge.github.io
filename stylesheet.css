@@ -49,14 +49,6 @@
     position: relative;
   }
   
-  .two {
-    width: 160px;
-    height: 160px;
-    position: absolute;
-    transition: opacity .2s ease-in-out;
-    -moz-transition: opacity .2s ease-in-out;
-    -webkit-transition: opacity .2s ease-in-out;
-  }
   
   .fade {
     transition: opacity .2s ease-in-out;
@@ -68,7 +60,7 @@
     background-color: #ffffd0;
   }
 
-   @media(max-width: 700px){
+  /*  @media(max-width: 800px){
     .table thead{
       display: none;
     }
@@ -77,4 +69,4 @@
       display: block;
       width: 100%;
     }
-  } 
+  }  */
