@@ -60,7 +60,7 @@
     background-color: #ffffd0;
   }
 
-  /*  @media(max-width: 800px){
+   @media(max-width: 800px){
     .table thead{
       display: none;
     }
@@ -69,4 +69,4 @@
       display: block;
       width: 100%;
     }
-  }  */
+  } 
