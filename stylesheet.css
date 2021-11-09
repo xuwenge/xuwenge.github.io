@@ -10,6 +10,12 @@
     text-decoration: none;
   }
   
+  .header {
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+  }
+
   body,
   td,
   th,
@@ -50,15 +56,6 @@
   }
   
   
-  .fade {
-    transition: opacity .2s ease-in-out;
-    -moz-transition: opacity .2s ease-in-out;
-    -webkit-transition: opacity .2s ease-in-out;
-  }
-  
-  span.highlight {
-    background-color: #ffffd0;
-  }
 
    @media(max-width: 800px){
     .table thead{
