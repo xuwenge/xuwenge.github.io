@@ -1,69 +1,171 @@
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
 
-  a {
-    color: #1772d0;
-    text-decoration: none;
-  }
-  
-  a:focus,
-  a:hover {
-    color: #f09228;
-    text-decoration: none;
-  }
-  
-  .header {
-    padding: 10px;
-    text-align: center;
-    font-size: 35px;
-  }
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin: 0;
+    border: 0;
+    padding-bottom: 10px;
+}
 
-  body,
-  td,
-  th,
-  tr,
-  p,
-  a {
-    font-family: 'Arial', Verdana, Helvetica, sans-serif;
-    font-size: 16px
-  }
-  
-  strong {
-    font-family: 'Arial', Verdana, Helvetica, sans-serif;
-    font-size: 16px;
-  }
-  
-  heading {
-    font-family: 'Arial', Verdana, Helvetica, sans-serif;
-    font-size: 32px;
-  }
-  
-  papertitle {
-    font-family: 'Arial', Verdana, Helvetica, sans-serif;
+papertitle {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 700;
-
   }
-  
-  name {
-    font-family: 'Arial', Verdana, Helvetica, sans-serif;
-    font-size: 36px;
-  }
-  
 
-  .one {
-    width: 160px;
-    height: 160px;
-    position: relative;
-  }
-  
-  
+#wrapper {
+    width: 100%;
+}
 
-   @media(max-width: 800px){
-    .table thead{
-      display: none;
+header {
+    color: black;
+    padding: 10px;
+    font-family: Tangerine, Arial, Helvetica, sans-serif;
+    font-size: 72px;
+    text-align: center;
+}
+
+nav.navMenu {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90%;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+nav.navMenu ul {
+    list-style: none;
+    width: 90%;
+    padding: 1%;
+    margin: 0;
+}
+
+nav.navMenu li {
+    display: inline;
+    border-right: 2px solid gray;
+}
+
+nav.navMenu li:last-of-type {
+    border-right: 0px;
+}
+
+nav.navMenu a {
+    color: #1772d0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    padding: 1%;
+}
+
+nav.navMenu a:hover {
+    color: #f09228;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+a {
+    color: #1772d0;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+a:hover {
+    color: #f09228;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+section {
+    overflow: auto;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 1%;
+}
+
+aside {
+    width: 20%;
+    height: auto;
+    float: left;
+    align-items: left;
+    /*padding-left: 13%;*/
+    padding-right: 2%;
+}
+
+aside img {
+    width: 100%;
+    float: right;
+    max-width: 180px;
+    min-width: 110px;
+    height: auto;
+    /*border-radius: 50%;*/   
+}
+
+article {
+    width: 78%;
+    float: left;
+    /*padding-right: 20%;*/
+}
+
+footer {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@media only screen and (min-width:540px) and (max-width: 880px){
+
+    section{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+
     }
-
-    .table, .table tbody, .table tr, .table td{
-      display: block;
-      width: 100%;
+    article,
+    aside {
+        width: 98%;
+        padding-bottom: 1%;
+        padding-left: 1%;
+        padding-right: 1%;
     }
-  } 
+    aside img {
+        display: block;
+        width: 50%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width:540px) {
+
+    section{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+    article,
+    aside {
+        width: 98%;
+        padding-bottom: 1%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    aside img {
+        display: block;
+        width: 50%;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
