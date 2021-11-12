@@ -38,6 +38,8 @@ nav.navMenu {
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
+    
+    background: #8a8a8a;
 }
 
 nav.navMenu ul {
@@ -49,7 +51,7 @@ nav.navMenu ul {
 
 nav.navMenu li {
     display: inline;
-    border-right: 2px solid gray;
+    border-right: 2px solid rgb(75, 75, 75);
 }
 
 nav.navMenu li:last-of-type {
