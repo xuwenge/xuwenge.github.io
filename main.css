@@ -87,32 +87,28 @@ section {
     overflow: auto;
     width: 60%;
     margin-left: 20%;
-    margin-right: 20%;
+    margin-right: 2%;
     margin-bottom: 1%;
 }
 
+
 aside {
     width: 20%;
-    height: auto;
     float: left;
     align-items: left;
-    /*padding-left: 13%;*/
     padding-right: 2%;
 }
 
 aside img {
     width: 100%;
-    float: right;
+    float: left;
+    min-width: 120px;
     max-width: 180px;
-    min-width: 110px;
-    height: auto;
-    /*border-radius: 50%;*/   
 }
 
 article {
     width: 78%;
     float: left;
-    /*padding-right: 20%;*/
 }
 
 footer {
@@ -122,7 +118,7 @@ footer {
     padding: 10px;
 }
 
-@media only screen and (min-width:540px) and (max-width: 880px){
+@media only screen and (min-width:540px) and (max-width: 1200px){
 
     section{
         width: 80%;
@@ -140,6 +136,7 @@ footer {
     aside img {
         display: block;
         width: 50%;
+        max-width: 180px;
         float: none;
         margin-left: auto;
         margin-right: auto;
@@ -164,8 +161,23 @@ footer {
     aside img {
         display: block;
         width: 50%;
+        max-width: 160px;
         float: none;
         margin-left: auto;
         margin-right: auto;
     }
 }
+
+/*@media only screen and (max-width:1500px) {
+
+
+    section {
+        overflow: auto;
+        max-width: 962.39px;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 1%;
+    }
+}*/
+    
+    
