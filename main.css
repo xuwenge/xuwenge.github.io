@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     border: 0;
@@ -18,7 +17,7 @@ papertitle {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 700;
-  }
+}
 
 #wrapper {
     width: 100%;
@@ -38,7 +37,6 @@ nav.navMenu {
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
-    
     background: #8a8a8a;
 }
 
@@ -47,18 +45,18 @@ nav.navMenu ul {
     width: 90%;
     padding: 1%;
     margin: 0;
+    overflow: hidden;
 }
 
 nav.navMenu li {
     display: inline;
-    border-right: 2px solid gray;
 }
 
 nav.navMenu li:last-of-type {
     border-right: 0px;
 }
 
-nav.navMenu a {
+nav.navMenu li a {
     color: #ffffff;
     text-decoration: none;
     text-align: center;
@@ -66,10 +64,14 @@ nav.navMenu a {
     padding: 1%;
 }
 
-nav.navMenu a:hover {
+nav.navMenu li a:hover:not(.active) {
     color: #292624;
     text-decoration: none;
     font-size: 16px;
+}
+
+nav.navMenu .active {
+    background-color: rgb(58, 58, 58);
 }
 
 a {
@@ -94,7 +96,6 @@ section {
     margin-top: 1%;
 }
 
-
 aside {
     width: 20%;
     float: left;
@@ -114,66 +115,41 @@ article {
     float: left;
 }
 
-  .social-footer {
+.social-footer {
     padding: 1px;
     background: #8a8a8a;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-
-            padding-left: 5%;
-            padding-right: 5%;
-  }
-  
-  .social-footer .social-footer-icons li:last-of-type {
-    margin-right: 0;
-  }
-  
-  .social-footer .social-footer-icons .fa {
-    font-size: 1.3rem;
-    color: #fefefe;
-  }
-  
-  .social-footer .social-footer-icons .fa:hover {
-    color: #4a4a4a;
-    transition: color 0.3s ease-in;
-  }
-  
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+}
 
 
 footer li {
     display: inline;
     padding-right: 5px;
 }
-  
-  
 
-@media only screen and (min-width:1300px) and (max-width: 1800px){
-
-    section{
+@media only screen and (min-width:1300px) and (max-width: 1800px) {
+    section {
         width: 55%;
         margin-left: 22.5%;
         margin-right: 22.5%;
-
     }
 }
 
-@media only screen and (min-width:800px) and (max-width: 1300px){
-
-    section{
+@media only screen and (min-width:800px) and (max-width: 1300px) {
+    section {
         width: 65%;
         margin-left: 17.5%;
         margin-right: 17.5%;
-
     }
-    article,
-    aside {
+    article, aside {
         width: 98%;
         padding-bottom: 1%;
         padding-left: 1%;
@@ -189,17 +165,13 @@ footer li {
     }
 }
 
-
-@media only screen and (min-width:540px) and (max-width: 800px){
-
-    section{
+@media only screen and (min-width:540px) and (max-width: 800px) {
+    section {
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
-
     }
-    article,
-    aside {
+    article, aside {
         width: 98%;
         padding-bottom: 1%;
         padding-left: 1%;
@@ -215,17 +187,13 @@ footer li {
     }
 }
 
-
 @media only screen and (max-width:540px) {
-
-    section{
+    section {
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
-
     }
-    article,
-    aside {
+    article, aside {
         width: 98%;
         padding-bottom: 1%;
         padding-left: 1%;
@@ -252,5 +220,3 @@ footer li {
         margin-bottom: 1%;
     }
 }*/
-    
-    
