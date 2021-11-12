@@ -51,7 +51,7 @@ nav.navMenu ul {
 
 nav.navMenu li {
     display: inline;
-    border-right: 2px solid rgb(75, 75, 75);
+    border-right: 2px solid gray;
 }
 
 nav.navMenu li:last-of-type {
@@ -59,7 +59,7 @@ nav.navMenu li:last-of-type {
 }
 
 nav.navMenu a {
-    color: #1772d0;
+    color: #ffffff;
     text-decoration: none;
     text-align: center;
     font-size: 16px;
@@ -67,7 +67,7 @@ nav.navMenu a {
 }
 
 nav.navMenu a:hover {
-    color: #f09228;
+    color: #292624;
     text-decoration: none;
     font-size: 16px;
 }
