@@ -183,7 +183,7 @@ footer li {
     }
 }
 
-@media only screen and (min-width:540px) and (max-width: 800px) {
+@media only screen and (min-width:480px) and (max-width: 800px) {
     section {
         width: 80%;
         margin-left: 10%;
@@ -205,7 +205,7 @@ footer li {
     }
 }
 
-@media only screen and (max-width:540px) {
+@media only screen and (max-width:480px) {
     section {
         width: 90%;
         margin-left: 5%;
