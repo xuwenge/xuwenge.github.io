@@ -62,7 +62,9 @@
 
         <section>
             <aside></aside>
-            <article><h2>Wenge Xu Bio</h2></article>
+            <article>
+                <h2>Wenge Xu Bio</h2>
+            </article>
         </section>
 
         <section>
@@ -71,7 +73,7 @@
             </aside>
             <article>
                 <p>
-                    I' a lecturer in HCI at the Birmingham City University (see my <a
+                    I'm a lecturer in HCI at the Birmingham City University (see my <a
                         href="https://www.bcu.ac.uk/digital-technology/about-us/our-expertise/our-staff/wenge-xu">BCU</a>
                     page). I obtained my PhD in 2021 from University of Liverpool, where I was supervised by Prof
                     <a href="https://www.xjtlu.edu.cn/en/staff?department=school-of-advanced-technology&alias=haining-liang"
@@ -94,9 +96,33 @@
         <section>
 
             <h1>Latest News</h1>
-            <p>
-                A full paper got accepted by JMIR Serious Game journal. - Aug
-            </p>
+            <ul>
+                <li>Will lead Advanced and Immersive Module in the coming year, excited!</li>
+                <li>Started my first ever grant review!</li>
+                <span id="dots">...</span>
+                <span id="more">
+                    <li>JMIR Serious Game paper on mental health is now available.</li>
+                </span>
+                <button class="read-more-btn" onclick="myFunction()" id="myBtn">More</button>
+
+                <script>
+                    function myFunction() {
+                        var dots = document.getElementById("dots");
+                        var moreText = document.getElementById("more");
+                        var btnText = document.getElementById("myBtn");
+
+                        if (dots.style.display === "none") {
+                            dots.style.display = "inline";
+                            btnText.innerHTML = "More";
+                            moreText.style.display = "none";
+                        } else {
+                            dots.style.display = "none";
+                            btnText.innerHTML = "Less";
+                            moreText.style.display = "inline";
+                        }
+                    }
+                </script>
+            </ul>
 
         </section>
 
