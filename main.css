@@ -1,4 +1,4 @@
-html, body{
+html, body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     border: 0;
@@ -23,7 +23,7 @@ header {
 
 nav.navMenu {
     font-family: Arial, Helvetica, sans-serif;
-    
+
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
@@ -66,6 +66,10 @@ nav.navMenu .active {
     background-color: rgb(58, 58, 58);
 }
 
+input#menu, label {
+    display: none;
+}
+
 #more {
     display: none;
 }
@@ -80,7 +84,7 @@ nav.navMenu .active {
     cursor: pointer;
 }
 
-.read-more-btn:hover{
+.read-more-btn:hover {
     color: #f09228;
 }
 
@@ -246,6 +250,45 @@ footer li {
         float: none;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .collapsible-menu {
+        background: #8a8a8a;
+        padding: 0px 5px;
+    }
+
+    .collapsible-menu label {
+        font-size: 120%;
+        display: block;
+        cursor: pointer;
+        background: url(graphics/menu.png) no-repeat left center;
+        padding: 10px 0 10px 50px;
+    }
+
+    input:checked+label {
+        background-image: url(graphics/close.png);
+    }
+
+    nav.navMenu {
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 0 0 50px;
+    }
+
+    /* Toggle Effect */
+    input:checked~label {
+        background-image: url(graphics/close.png);
+    }
+
+    input:checked~nav.navMenu {
+        max-height: 100%;
+    }
+
+    nav.navMenu li {
+        display: block;
+        width: 100%;
+        border-right:0;
+        min-height: 44px;
     }
 }
 
