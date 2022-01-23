@@ -75,7 +75,7 @@ input#menu, label {
 }
 
 .read-more-btn {
-    padding: none;
+    padding: 0;
     background-color: white;
     color: #1772d0;
     border: none;
@@ -137,7 +137,7 @@ section {
 aside {
     width: 20%;
     float: left;
-    align-items: left;
+    
     padding-right: 2%;
 }
 
@@ -261,12 +261,12 @@ footer li {
         font-size: 120%;
         display: block;
         cursor: pointer;
-        background: url(../graphics/menu.png) no-repeat left center;
+        background: url(graphics/menu.png) no-repeat left center;
         padding: 10px 0 10px 50px;
     }
 
     input:checked+label {
-        background-image: url(../graphics/close.png);
+        background-image: url(graphics/close.png);
     }
 
     nav.navMenu {
@@ -277,7 +277,7 @@ footer li {
 
     /* Toggle Effect */
     input:checked~label {
-        background-image: url(../graphics/close.png);
+        background-image: url(graphics/close.png);
     }
 
     input:checked~nav.navMenu {
