@@ -52,13 +52,13 @@ nav.navMenu li a {
     color: #ffffff;
     text-decoration: none;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     padding: 1% 1% 1% 1%;
 }
 
 nav.navMenu li a:hover:not(.active) {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     background-color: rgb(80, 80, 80);
 }
 
@@ -80,7 +80,7 @@ input#menu, label {
     color: #1772d0;
     border: none;
     outline: none;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -92,12 +92,12 @@ a {
     color: #1772d0;
     text-decoration: none;
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 a.papertitle {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
 }
 
@@ -122,7 +122,7 @@ ul li a:hover i.fas, ul li a:hover i.fab {
 section a:hover {
     color: #f09228;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 section {
@@ -289,6 +289,10 @@ footer li {
         width: 100%;
         border-right:0;
         min-height: 45px;
+    }
+
+    nav.navMenu li a {
+        font-size: 24px;
     }
 }
 
