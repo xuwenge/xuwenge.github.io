@@ -27,7 +27,7 @@ nav.navMenu {
     text-align: center;
     padding-left: 5%;
     padding-right: 5%;
-    background: #8a8a8a;
+    background: black;
 }
 
 nav.navMenu ul {
@@ -155,7 +155,7 @@ article {
 
 .social-footer {
     padding: 1px;
-    background: #8a8a8a;
+    background: black;
     display: flex;
     -webkit-align-items: center;
     -ms-flex-align: center;
