@@ -22,16 +22,35 @@ li {
 }
 
 header {
+    width: 100%;
     text-align: center;
+    display: flex;
+}
+
+.logo {
+    width: 10%;
+    background-color: black;
+}
+
+.logo img {
+    width: 50%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.collapsible-menu {
+    width: 90%;
+    background-color: black;
 }
 
 nav.navMenu {
     font-family: Arial, Helvetica, sans-serif;
-
     text-align: center;
+    vertical-align: middle;
     padding-left: 5%;
     padding-right: 5%;
     background: black;
+    margin: auto;
 }
 
 nav.navMenu ul {
@@ -39,12 +58,13 @@ nav.navMenu ul {
     width: 90%;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin: 0;
     overflow: hidden;
 }
 
 nav.navMenu li {
     display: inline;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-right: 2px solid white;
 }
 
@@ -141,7 +161,7 @@ section {
 aside {
     width: 20%;
     float: left;
-    
+
     padding-right: 2%;
 }
 
@@ -186,6 +206,23 @@ footer li {
 }
 
 @media only screen and (min-width:800px) and (max-width: 1300px) {
+    
+    .logo {
+        width: 15%;
+        background-color: black;
+    }
+    
+    .logo img {
+        width: 50%;
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+    
+    .collapsible-menu {
+        width: 85%;
+        background-color: black;
+    }
+    
     section {
         width: 65%;
         margin-left: 17.5%;
@@ -210,6 +247,24 @@ footer li {
 }
 
 @media only screen and (min-width:480px) and (max-width: 800px) {
+    
+    .logo {
+        width: 20%;
+        background-color: black;
+    }
+    
+    .logo img {
+        width: 50%;
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+    
+    .collapsible-menu {
+        width: 80%;
+        background-color: black;
+    }
+    
+    
     section {
         width: 80%;
         margin-left: 10%;
@@ -234,40 +289,26 @@ footer li {
 }
 
 @media only screen and (max-width:480px) {
-    section {
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
+   
+    .logo {
+        width: 20%;
     }
 
-    article, aside {
-        width: 98%;
-        padding-bottom: 1%;
-        padding-left: 1%;
-        padding-right: 1%;
-    }
-
-    aside img {
-        display: block;
-        width: 50%;
-        max-width: 160px;
-        float: none;
-        margin-left: auto;
-        margin-right: auto;
+    .logo img {
+        width: 100%;
+        padding: 0;
     }
 
     .collapsible-menu {
-        background: black;
-        padding: 0px 5px;
+        width: 80%;
+        height: auto;
     }
 
     .collapsible-menu label {
-        font-size: 120%;
         display: block;
-        color: white;
         cursor: pointer;
-        background: url(graphics/menu.png) no-repeat left center;
-        padding: 10px 0 10px 50px;
+        background: url(graphics/menu.png) right center no-repeat;
+        padding: 50px 0 50px 0;
     }
 
     input:checked+label {
@@ -289,15 +330,48 @@ footer li {
         max-height: 100%;
     }
 
+    nav.navMenu ul{
+        padding: 0;
+    }
     nav.navMenu li {
         display: block;
         width: 100%;
-        border-right:0;
+        border-right: 0;
         min-height: 45px;
+        padding: 0;
+        margin: 0;
     }
 
     nav.navMenu li a {
         font-size: 24px;
+    }
+
+    nav.navMenu li a:hover:not(.active) {
+        text-decoration: none;
+        font-size: 24px;
+        background-color: rgb(80, 80, 80);
+    }
+
+    section {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    article, aside {
+        width: 98%;
+        padding-bottom: 1%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    aside img {
+        display: block;
+        width: 50%;
+        max-width: 160px;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
