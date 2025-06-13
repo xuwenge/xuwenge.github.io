@@ -6,10 +6,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="author" content="Wenge Xu">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wenge Xu" />
-    <meta name="keywords" content="Wenge Xu, HCI, AR, VR" />
+    <meta name="description"
+        content="Wenge Xu is a Senior Lecturer in Human-Computer Interaction (HCI) at Birmingham City University. His research focuses on inclusive design, VR/AR, and human factors." />
+    <meta name="keywords"
+        content="Wenge Xu, Human-Computer Interaction, HCI, Augmented Reality, AR, Virtual Reality, VR" />
 
-    <title>VR/AR Guidelines Collection</title>
+    <title>Wenge Xu – Senior Lecturer in Human-Computer Interaction</title>
 
     <script src="https://kit.fontawesome.com/11a1921d56.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="main.css" />
@@ -34,6 +36,7 @@
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-T7S9H6B');</script>
     <!-- End Google Tag Manager -->
+
 </head>
 
 
@@ -46,17 +49,17 @@
 
     <div id="wrapper">
 
-        <header>
+       <header>
             <div class="logo">
-                <a href="index.html"><img src="graphics/logo.png"
-                        alt="An image contains Wenge wearing VR head mounted display on the top and his name Wenge Xu on the bottom"></a>
+                <a href="index.html"><img src="graphics/logo.png" alt="Wenge Xu VR logo"></a>
             </div>
             <div class="collapsible-menu">
                 <input type="checkbox" id="menu">
                 <label for="menu"></label>
                 <nav class="navMenu">
                     <ul>
-                        <li><a href="publications.html">Publications</a> </li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="publications.html">Publications</a></li>
                         <li><a href="resources.html">Resource</a></li>
                         <li><a class="active" href="guidelines.html">Guidelines</a></li>
                     </ul>
@@ -65,182 +68,53 @@
         </header>
 
         <section>
-            <p>Below, I present the design guidelines we suggested based on our research; if you find them useful and
-                use them in your application or consider integrating them, please keep me updated. I would like to have
-                a look and support you.</p>
+            <h1>Exergame Design Guidelines Overview</h1>
+            <p>These design guidelines are based on a series of published research projects. If you use or adapt these for your own work, feel free to get in touch—I'd love to support your efforts.</p>
 
-        </section>
-
-        <section>
-            <h1>Design Guidelines for Adding Virtual Spectator Audience in Virtual Reality Games <a
-                    href="https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1079132/full">
-                    1</a> </h1>
+            <h2 id="spectator">1. Virtual Spectator Audience in VR Exergames <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1079132/full">[Paper]</a></h2>
             <ul>
-                <li><strong>Enabling spectator feedback as a main priority</strong>
-                    <p>
-                        Exergame designers should include some type of spectator
-                        support and encouraging messages whenever players are making
-                        good progress, e.g., (1) when their performance has
-                        achieved a certain level, (2) when their performance has resulted in good outcomes,
-                        and (3) when their performance has prevented
-                        the opponent from performing well.</p>
-
-                </li>
-                <li><strong>Adding larger spectator audience</strong>
-                    <p>
-                        Here we list examples of how the spectator NPCs can be added to the
-                        games based on the degree of locomotion the player
-                        has in VR:
+                <li><strong>Enable spectator feedback:</strong> Trigger cheering or encouragement when users (1) reach milestones, (2) perform well, or (3) block an opponent.</li>
+                <li><strong>Adapt spectator placement by locomotion scale:</strong>
                     <ul>
-                        <li>(1) <strong>Low</strong>: in exergames that the player mostly remains at
-                            the same location [e.g., VirusBoxing, Beat Saber4, Hot Squat,
-                            spectators/supporters can be added behind the player, alongside the
-                            objects’ flying area, or placed at a higher location where the game
-                            objects are initialized.</li>
-                        <li>(2) <strong>Medium</strong>: in exergames where players only
-                            need to move in a limited in-game distance (Eleven Table Tennis
-                            VR), spectators can be added around the users but with a small
-                            distance. A good example is the Creed: Rise to Glory.</li>
-                        <li>
-                            (3) <strong>High</strong>:
-                            in exergames where players need to move their in-game position
-                            on a large scale (e.g., VR cycling games), the
-                            spectator could be placed alongside the playing or track field (e.g.,
-                            placing the spectators next to the street for VR cycling games).
-                        </li>
+                        <li><em>Low movement:</em> Place spectators behind or above (e.g., Beat Saber).</li>
+                        <li><em>Medium movement:</em> Surround players with close-range audience (e.g., Creed VR).</li>
+                        <li><em>High movement:</em> Place spectators along game paths or streets (e.g., VR cycling).</li>
                     </ul>
-
-
-                    </p>
-
                 </li>
             </ul>
-        </section>
 
-        <section>
-            <h1>Design Guidelines for Adding Co-Located non-VR users in VR Games <a
-                    href="https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1079132/full">
-                    1</a> </h1>
+            <h2 id="colocated">2. Representing Co-located Non-VR Users <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1079132/full">[Paper]</a></h2>
             <ul>
-                <li><strong> Representing Co-located Non-VR Observers on Head-Mounted Display</strong>
-                    <p>
-                        Our study suggests that VR HMD users prefer real visual representations of observers, allowing
-                        them to see real-time reactions and movements, enhancing copresence and
-                        communication. We recommend displaying/passthrough only the
-                        co-located observer or the entire real environment on HMDs. Passthrough only the
-                        co-located
-                        observer maintains more of the virtual environment and simulates observers
-                        entering the virtual space, while Passthrough the entire real environment merges virtual and
-                        real environments for a comprehensive real-world view. Displaying observers in a
-                        window is discouraged due to its unnatural integration, which reduces the sense of shared
-                        space.</p>
-
-                </li>
-                <li><strong>Representing Co-located Non-VR Observers on 2D Screens (e.g., TV, laptop, monitor)</strong>
-                    <p>
-                        Unlike VR HMD users, co-located non-vr observers watching on 2D screens preferred either a
-                        realistic representation
-                        or a virtual avatar, influenced by their personalities. We recommend offering both options to
-                        accommodate different needs. Observers who preferred a realistic image
-                        felt it enhanced their participation and immersion. For this, we suggest using passthrough only
-                        observer technique to show only
-                        the observer, as it best supports their sense of entering the virtual world. Passthrough entire
-                        environment is less
-                        necessary for observers already seeing the real environment, and Displaying observers in a
-                        window is not recommended due to its unnatural integration.
-                    </p>
-                    <p>
-                        For those who preferred a virtual avatar, the benefits included
-                        reducing awkwardness and blending naturally with the virtual environment. We recommend using
-                        avatars consistent with the virtual world’s style and suggest two design enhancements: (1) offer
-                        customizable models for personalized avatars, and (2) use motion
-                        capture to align avatar movements with the observer’s actions.
-                    </p>
-
-                </li>
+                <li><strong>On VR HMD:</strong> Use passthrough to show observers only or entire real environment. Avoid floating window views.</li>
+                <li><strong>On 2D screens:</strong> Offer real-life view or avatar representations based on observer preference. For avatars, use consistent style and motion capture for realism.</li>
             </ul>
-        </section>
 
-        <section>
-            <h1>VR Game Design Recommendations for Older Adults Players <a
-                    href="https://link.springer.com/article/10.1007/s10055-023-00780-5">
-                    1</a>, <a
-                    href="https://www.tandfonline.com/doi/abs/10.1080/10447318.2022.2098559?journalCode=hihc20">
-                    2</a> </h1>
+            <h2 id="older">3. VR Game Design for Older Adults <a href="https://link.springer.com/article/10.1007/s10055-023-00780-5">[1]</a>, <a href="https://www.tandfonline.com/doi/abs/10.1080/10447318.2022.2098559">[2]</a></h2>
             <ul>
-                <li> <strong>Include an audience and feedback that reacts
-                        to players’ movements in VR exergames</strong>
-                    <p>
-                        Based on our fndings, including an audience (even composed of generic NPCs) and its
-                        feedback reacting to the players’ movements can improve the performance and enhance the gameplay
-                        experience for elderly players. We suggest including an audience and providing positive feedback
-                        whenever the elderly players are making good progress, the term "good progress" can be varied
-                        across games, please define this based on the game you are designing. In addition, more NPC
-                        models
-                        and a diverse range of visual and audio feedback are needed.
-                    </p>
-                </li>
-                <li><strong>Gesture customization or adaptive exertion level
-                        for older adult users</strong>
-                    <p>When all movements can achieve the desired exertion of the exergame:
-                        (1) providing the players with a list of movements and enabling them to select their preferred
-                        gestures, or (2) allowing the players to customize the gestures; both approaches could lead to
-                        a better and more personalized experience. </p>
-
-                    <p>When some movements cannot achieve the desired
-                        exertion level but are necessary to help players reach a certain exertion level, a possible
-                        approach is to apply an adaptive exertion level for each participant based on each individual’s
-                        physical ability level, exercise demands, and performance in the game.</p>
-                </li>
-                <li><strong>More acceptable VR exergames for Chinese older adults.</strong>
-                    <p>
+                <li><strong>Include cheering NPCs:</strong> Feedback from an audience improves performance and enjoyment.</li>
+                <li><strong>Custom gestures or adaptive exertion:</strong> Let users customize movement or adapt difficulty to their physical ability.</li>
+                <li><strong>For Chinese older adults:</strong>
                     <ul>
-                        <li>
-                            <p>As Perceived Usefulness had a positive effect on
-                                Chinese older adults’ intention towards VR exergames,
-                                VR game desginers of these games should (1) ensure a game
-                                is sufficient to provide health benefits, and (2) highlight the health benefits people
-                                could obtain and how effective of it.</p>
-                        </li>
-                        <li>
-                            <p>Use natural and simple motions (e.g., punching, slicing,
-                                dancing) for VR exergames as these motions are easy to
-                                use–Perceived Ease of Use is a positive predictor of
-                                Chinese older adults’ intention to use VR exergames.
-                                No additional tutorials are needed when the game only uses easy-to learn and natural
-                                motions.</p>
-                        </li>
-                        <li>
-                            <p>VR exergame producers should provide various in-game
-                                achievements to encourage further gameplay. One way
-                                to achieve this is to use a badge system.</p>
-
-                        </li>
-                        <li>
-                            <p>VR exergames should enable social interaction within
-                                these games and encourage older adults to play together
-                                in groups or at least with another friend.
-                                Studies suggest that social interaction could help older
-                                adults exchange tips for better performance and, as
-                                such, could make them more engaged in a game.</p>
-
-                        </li>
-                        <li>
-                            <p>Consideration should be given to the demographics of
-                                the population. e.g., if it's Chinese older adults, dancing games should
-                                involve some type of Chinese style dances. Chinese
-                                songs can also be provided in rhythmic-based and dancing games.
-                                Multiplayer features should be supported
-                                since the Chinese elderly are quite social and prefer to
-                                play with their peers. </p>
-                        </li>
+                        <li>Highlight health benefits to increase perceived usefulness.</li>
+                        <li>Use natural, simple movements to reduce the need for tutorials.</li>
+                        <li>Add gamified achievements (e.g., badges) to encourage return play.</li>
+                        <li>Enable social play or leaderboard elements.</li>
                     </ul>
-                    </p>
-
                 </li>
             </ul>
+
+            <h2 id="familiarity">4. Audience Familiarity in VR Exergames <a href="https://ieeexplore.ieee.org/document/10316475" target="_blank">[Paper]</a></h2>
+            <ul>
+                <li><strong>Customizable NPCs:</strong> Integrate familiar individuals such as friends and family by customizing face, height, body shape, and voice of NPC spectators. This boosts immersion and emotional connection.</li>
+                <li><strong>Personality-aware interaction:</strong> Consider personality traits like self-consciousness when designing audience interaction. Tailored designs based on user traits can optimize experience and performance.</li>
+                <li><strong>Prioritize voice familiarity:</strong> Voice familiarity significantly improves player performance and is easier to implement than facial features. Players responded more positively to familiar voices alone than appearance alone.</li>
+                <li><strong>Implementation tip:</strong> Collect voice recordings from real friends or family members and integrate them into cheering NPCs for a more personalized experience.</li>
+            </ul>
+
+            <p style="text-align:center;"><a href="#wrapper">Back to top ↑</a></p>
         </section>
 
+        
 
 
         <!--end of section -->
